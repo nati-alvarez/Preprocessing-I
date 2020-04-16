@@ -143,6 +143,14 @@ body {
   font-family: Nunito;
   color: #40413d;
 }
+/* Mixins */
+.flexbox {
+  display: flex;
+}
+.flexboxColumn {
+  display: flex;
+  flex-direction: column;
+}
 header {
   background: #b9c8c7;
   padding: 6vh 0;
