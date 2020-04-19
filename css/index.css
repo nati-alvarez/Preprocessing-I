@@ -138,11 +138,6 @@ html {
   font-size: 62.5%;
 }
 /* Variables */
-/* Styles */
-body {
-  font-family: Nunito;
-  color: #40413d;
-}
 /* Mixins */
 .flexbox {
   display: flex;
@@ -150,6 +145,15 @@ body {
 .flexboxColumn {
   display: flex;
   flex-direction: column;
+}
+/* Styles */
+body {
+  font-family: Nunito;
+  color: #40413d;
+  font-size: 1.6rem;
+}
+p {
+  line-height: 2.6rem;
 }
 header {
   background: #b9c8c7;
@@ -167,9 +171,85 @@ header .content h1 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 2vh;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 header .content h2 {
   text-align: center;
   font-size: 2rem;
   color: #b2b2b1;
+}
+main {
+  padding: 10vh 20vh;
+}
+section.about {
+  display: flex;
+  margin-bottom: 15vh;
+}
+section.about > div {
+  flex: 1;
+}
+section.about .introduction {
+  font-size: 1.8rem;
+}
+section.about .introduction h3 {
+  margin-bottom: 4vh;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+section.about .headshot {
+  text-align: center;
+}
+section.about .headshot img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+}
+section.about .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.about .contact address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.about .contact i {
+  font-size: 2rem;
+}
+section.knowledge {
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid #40413d;
+  position: relative;
+}
+section.knowledge div {
+  width: 30%;
+}
+section.knowledge h3 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  background: white;
+  border: 2px solid #40413d;
+  padding: 2vh;
+  position: relative;
+  top: -10%;
+}
+section.knowledge .skills h3 {
+  background: #f1dec8;
+}
+section.knowledge ul {
+  margin-top: 5%;
+  font-size: 1.8rem;
+}
+section.knowledge ul li {
+  line-height: 2.6rem;
+  margin-bottom: 2vh;
 }

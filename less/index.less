@@ -67,13 +67,7 @@ html {
 @white: #ffffff;
 @black: #40413d;
 @grey: #b2b2b1;
-
-/* Styles */
-
-body {
-	font-family: Nunito;
-	color: @black;
-}
+@tan: #f1dec8;
 
 /* Mixins */
 
@@ -84,6 +78,18 @@ body {
 .flexboxColumn {
 	.flexbox();
 	flex-direction: column;
+}
+
+/* Styles */
+
+body {
+	font-family: Nunito;
+	color: @black;
+	font-size: 1.6rem;
+}
+
+p {
+	line-height: 2.6rem;
 }
 
 header {
@@ -102,12 +108,100 @@ header {
 			font-size: 4rem;
 			text-align: center;
 			margin-bottom: 2vh;
+			text-transform: uppercase;
+			letter-spacing: .5rem;
 		}
 		
 		h2 {
 			text-align: center;
 			font-size: 2rem;
 			color: @grey;
+		}
+	}
+}
+
+main {
+	padding: 10vh 20vh;
+}
+
+section.about {
+	.flexbox();
+	margin-bottom: 15vh;
+
+	> div {
+		flex: 1;
+	}
+
+	.introduction {
+		font-size: 1.8rem;
+		h3 {
+			margin-bottom: 4vh;
+			text-transform: uppercase;
+			text-align: center;
+			font-size: 2.4rem;
+			font-weight: 600;
+		}
+	}
+
+	.headshot {
+		text-align: center;
+		img {
+			width: 100%;
+			max-width: 200px;
+			border-radius: 50%;
+		}
+	}
+
+	.contact {
+		.flexboxColumn();
+		justify-content: space-evenly;
+
+		address {
+			.flexbox();
+			justify-content: space-between;
+			align-items: center;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		i {
+			font-size: 2rem;
+		}
+	}
+}
+
+section.knowledge {
+	.flexbox();
+	justify-content: space-between;
+	border-top: 3px solid @black;
+	position: relative;
+
+	div {
+		width: 30%;
+	}
+	
+	h3 {
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2.4rem;
+		background: white;
+		border: 2px solid @black;
+		padding: 2vh;
+		position: relative;
+		top: -10%;
+	}
+
+	.skills h3 {
+		background: @tan;
+	}
+
+	ul {
+		margin-top: 5%;
+		font-size: 1.8rem;
+		li {
+			line-height: 2.6rem;
+			margin-bottom: 2vh;
 		}
 	}
 }
