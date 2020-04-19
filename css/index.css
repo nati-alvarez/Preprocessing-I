@@ -210,6 +210,9 @@ section.about .introduction h3 {
   font-size: 2.4rem;
   font-weight: 600;
 }
+section.about .introduction p {
+  color: #b2b2b1;
+}
 section.about .headshot {
   text-align: center;
 }
@@ -258,6 +261,9 @@ section.knowledge h3 {
 section.knowledge .skills h3 {
   background: #f1dec8;
   border: none;
+}
+section.knowledge .education ul {
+  color: #b2b2b1;
 }
 section.knowledge ul {
   margin-top: 5%;
