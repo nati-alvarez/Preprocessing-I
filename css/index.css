@@ -179,6 +179,17 @@ header .content h2 {
   font-size: 2rem;
   color: #b2b2b1;
 }
+nav {
+  padding: 2vh;
+  background: #40413d;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  margin: 0px 2vh;
+  color: #ffffff;
+  text-decoration: none;
+}
 main {
   padding: 10vh 20vh;
 }
