@@ -148,7 +148,7 @@ html {
 }
 /* Styles */
 body {
-  font-family: Nunito;
+  font-family: Nunito, Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #40413d;
   font-size: 1.6rem;
 }
