@@ -177,6 +177,7 @@ section.knowledge {
 	justify-content: space-between;
 	border-top: 3px solid @black;
 	position: relative;
+	margin-bottom: 10vh;
 
 	div {
 		width: 30%;
@@ -187,6 +188,7 @@ section.knowledge {
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 2.4rem;
+		font-weight: bold;
 		background: white;
 		border: 2px solid @black;
 		padding: 2vh;
@@ -196,6 +198,7 @@ section.knowledge {
 
 	.skills h3 {
 		background: @tan;
+		border: none;
 	}
 
 	ul {
@@ -206,4 +209,60 @@ section.knowledge {
 			margin-bottom: 2vh;
 		}
 	}
+}
+
+section.experience {
+	border-top: 3px solid black;
+	position: relative;
+
+	h3, h4 {
+		font-size: 2.4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	h3 {
+		background: @tan;
+		width: 200vw;
+		max-width: 400px;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 2vh;
+		position: relative;
+		top: -4vh;
+	}
+
+	.job {
+		display: flex;
+		margin-bottom: 5vh;
+
+		.responsibilities {
+			flex: 7;
+
+			h4 {
+				margin-bottom: 2vh;
+			}
+
+			ul {
+				line-height: 2.6rem;
+				list-style-type: disc;
+				color: @grey;
+			}
+		}
+		.date {
+			padding: 2vh 5vh;
+			background: @paleGreen;
+			flex: 1;
+			font-weight: bold;
+			text-transform: uppercase;
+			.flexboxColumn();
+			justify-content: space-between;
+		}
+	}
+}
+
+footer {
+	padding: 2vh;
+	background: @tan;
 }

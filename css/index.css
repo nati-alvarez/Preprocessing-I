@@ -227,6 +227,7 @@ section.knowledge {
   justify-content: space-between;
   border-top: 3px solid #40413d;
   position: relative;
+  margin-bottom: 10vh;
 }
 section.knowledge div {
   width: 30%;
@@ -236,6 +237,7 @@ section.knowledge h3 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.4rem;
+  font-weight: bold;
   background: white;
   border: 2px solid #40413d;
   padding: 2vh;
@@ -244,6 +246,7 @@ section.knowledge h3 {
 }
 section.knowledge .skills h3 {
   background: #f1dec8;
+  border: none;
 }
 section.knowledge ul {
   margin-top: 5%;
@@ -252,4 +255,54 @@ section.knowledge ul {
 section.knowledge ul li {
   line-height: 2.6rem;
   margin-bottom: 2vh;
+}
+section.experience {
+  border-top: 3px solid black;
+  position: relative;
+}
+section.experience h3,
+section.experience h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+section.experience h3 {
+  background: #f1dec8;
+  width: 200vw;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2vh;
+  position: relative;
+  top: -4vh;
+}
+section.experience .job {
+  display: flex;
+  margin-bottom: 5vh;
+}
+section.experience .job .responsibilities {
+  flex: 7;
+}
+section.experience .job .responsibilities h4 {
+  margin-bottom: 2vh;
+}
+section.experience .job .responsibilities ul {
+  line-height: 2.6rem;
+  list-style-type: disc;
+  color: #b2b2b1;
+}
+section.experience .job .date {
+  padding: 2vh 5vh;
+  background: #b9c8c7;
+  flex: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer {
+  padding: 2vh;
+  background: #f1dec8;
 }
