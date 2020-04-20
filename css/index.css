@@ -422,6 +422,13 @@ section.experience .job .date {
   }
 }
 footer {
+  display: flex;
+  justify-content: center;
   padding: 2vh;
   background: #f1dec8;
+}
+footer a {
+  color: #40413d;
+  text-decoration: none;
+  margin: 0px 10px;
 }
