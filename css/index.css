@@ -204,6 +204,7 @@ nav a {
   margin: 0px 2vh;
   color: #ffffff;
   text-decoration: none;
+  cursor: pointer;
 }
 main {
   padding: 10vh 20vh;

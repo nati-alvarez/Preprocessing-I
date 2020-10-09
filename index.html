@@ -23,9 +23,9 @@
   </header>
   <nav>
     <a href="./">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
+    <a onclick="scrollToSection('#about')">About</a>
+    <a onclick="scrollToSection('#education')">Education</a>
+    <a onclick="scrollToSection('#experience')">Experience</a>
   </nav>
   <main>
     <section class="about">
@@ -39,12 +39,12 @@
       <div class="contact">
         <address>tivialvarez@gmail.com <i class="fas fa-envelope"></i></address>
         <address>
-          <a href="https://natividadalvarez.surge.sh">natividadalvarez.surge.sh</a> <i class="fas fa-globe"></i>
+          <a href="https://natividadalvarez.vercel.app">natividadalvarez.vercel.app</a> <i class="fas fa-globe"></i>
         </address>
         <address>
           <a href="https://github.com/nati-alvarez">github.com/nati-alvarez</a> <i class="fab fa-github"></i>
         </address>
-        <address>(864) 501-9877 <i class="fas fa-phone"></i></address>
+        <address>(864) 651-2078 <i class="fas fa-phone"></i></address>
       </div>
     </section>
     <section id="education" class="knowledge">
@@ -144,4 +144,11 @@
     </div>
   </footer>
 </body>
+<script>
+  function scrollToSection(sectionName){
+    document.querySelector(sectionName).scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
 </html>
