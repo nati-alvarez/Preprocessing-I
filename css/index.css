@@ -155,6 +155,18 @@ body {
 p {
   line-height: 2.6rem;
 }
+.download-resume {
+  z-index: 3;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  padding: 1rem;
+  font-weight: bold;
+  background: #4b4bd7;
+  color: snow;
+  border: none;
+  border-radius: 5px;
+}
 header {
   background: #b9c8c7;
   padding: 6vh 0;
@@ -439,4 +451,121 @@ footer a {
   color: #40413d;
   text-decoration: none;
   margin: 0px 10px;
+}
+@media print {
+  .download-resume,
+  nav,
+  footer,
+  script {
+    display: none !important;
+  }
+  header {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  header .content {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  header .content h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+    font-weight: normal !important;
+  }
+  main {
+    padding: 0;
+  }
+  section.about {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
+    align-items: flex-start;
+  }
+  section.about .introduction {
+    margin-right: 40px;
+  }
+  section.about .introduction h3 {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  section.about .introduction p {
+    margin-top: 15px;
+  }
+  section.about address {
+    margin-bottom: 15px;
+  }
+  section.about .headshot {
+    display: none;
+    width: 55px;
+    height: 55px;
+  }
+  section.knowledge {
+    margin-bottom: 60px;
+  }
+  section.knowledge h3 {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    border: none;
+  }
+  section.knowledge ul {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  section.knowledge ul li {
+    margin-bottom: 10px;
+  }
+  section.experience {
+    border-top: 3px solid black;
+    position: relative;
+  }
+  section.experience h3,
+  section.experience h4 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  section.experience h3 {
+    background: transparent;
+    text-align: left;
+    position: relative;
+    top: -27px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  section.experience .job {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  section.experience .job .responsibilities {
+    width: 80%;
+  }
+  section.experience .job .responsibilities h4 {
+    margin-bottom: 2vh;
+  }
+  section.experience .job .responsibilities ul {
+    list-style-type: disc;
+    color: black;
+  }
+  section.experience .job .responsibilities ul li {
+    margin-bottom: 5px;
+  }
+  section.experience .job .date {
+    padding: 0;
+    padding-top: 40px;
+    font-weight: normal;
+    display: block;
+  }
+  section.experience .job .date > * {
+    margin-bottom: 10px;
+  }
 }
